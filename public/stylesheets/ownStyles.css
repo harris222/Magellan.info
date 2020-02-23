@@ -1,0 +1,92 @@
+/*
+* Sasss file compiled into /public/stylesheets as ownStyles.css
+*/
+* {
+  z-index: 0;
+}
+
+#title-container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  transition: 1s ease-out;
+  z-index: 1;
+}
+
+#title-container:hover {
+  background-color: #006414;
+  border-radius: 10px;
+}
+
+#title {
+  font-family: "Bulmer", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 100px;
+  font-weight: 700;
+  mix-blend-mode: luminosity;
+  transform: rotate3d(1, 1, 1, -5deg);
+  top: 5vh;
+  z-index: 2;
+  transition: 1s linear;
+}
+
+#title:hover {
+  color: "black";
+  text-shadow: -10px -10px 0 blue, -10px -9px 0 blue, -10px -8px 0 blue, -10px -7px 0 blue, -10px -6px 0 blue, -10px -5px 0 blue, -10px -4px 0 blue, -10px -3px 0 blue, -10px -2px 0 blue, -10px -1px 0 blue, -10px 0px 0 blue, -10px 1px 0 blue, -10px 2px 0 blue, -10px 3px 0 blue, -10px 4px 0 blue, -10px 5px 0 blue, -10px 6px 0 blue, -10px 7px 0 blue, -10px 8px 0 blue, -10px 9px 0 blue, -10px 10px 0 blue, -9px -10px 0 blue, -9px -9px 0 blue, -9px -8px 0 blue, -9px -7px 0 blue, -9px -6px 0 blue, -9px -5px 0 blue, -9px -4px 0 blue, -9px -3px 0 blue, -9px -2px 0 blue, -9px -1px 0 blue, -9px 0px 0 blue, -9px 1px 0 blue, -9px 2px 0 blue, -9px 3px 0 blue, -9px 4px 0 blue, -9px 5px 0 blue, -9px 6px 0 blue, -9px 7px 0 blue, -9px 8px 0 blue, -9px 9px 0 blue, -9px 10px 0 blue, -8px -10px 0 blue, -8px -9px 0 blue, -8px -8px 0 blue, -8px -7px 0 blue, -8px -6px 0 blue, -8px -5px 0 blue, -8px -4px 0 blue, -8px -3px 0 blue, -8px -2px 0 blue, -8px -1px 0 blue, -8px 0px 0 blue, -8px 1px 0 blue, -8px 2px 0 blue, -8px 3px 0 blue, -8px 4px 0 blue, -8px 5px 0 blue, -8px 6px 0 blue, -8px 7px 0 blue, -8px 8px 0 blue, -8px 9px 0 blue, -8px 10px 0 blue, -7px -10px 0 blue, -7px -9px 0 blue, -7px -8px 0 blue, -7px -7px 0 blue, -7px -6px 0 blue, -7px -5px 0 blue, -7px -4px 0 blue, -7px -3px 0 blue, -7px -2px 0 blue, -7px -1px 0 blue, -7px 0px 0 blue, -7px 1px 0 blue, -7px 2px 0 blue, -7px 3px 0 blue, -7px 4px 0 blue, -7px 5px 0 blue, -7px 6px 0 blue, -7px 7px 0 blue, -7px 8px 0 blue, -7px 9px 0 blue, -7px 10px 0 blue, -6px -10px 0 blue, -6px -9px 0 blue, -6px -8px 0 blue, -6px -7px 0 blue, -6px -6px 0 blue, -6px -5px 0 blue, -6px -4px 0 blue, -6px -3px 0 blue, -6px -2px 0 blue, -6px -1px 0 blue, -6px 0px 0 blue, -6px 1px 0 blue, -6px 2px 0 blue, -6px 3px 0 blue, -6px 4px 0 blue, -6px 5px 0 blue, -6px 6px 0 blue, -6px 7px 0 blue, -6px 8px 0 blue, -6px 9px 0 blue, -6px 10px 0 blue, -5px -10px 0 blue, -5px -9px 0 blue, -5px -8px 0 blue, -5px -7px 0 blue, -5px -6px 0 blue, -5px -5px 0 blue, -5px -4px 0 blue, -5px -3px 0 blue, -5px -2px 0 blue, -5px -1px 0 blue, -5px 0px 0 blue, -5px 1px 0 blue, -5px 2px 0 blue, -5px 3px 0 blue, -5px 4px 0 blue, -5px 5px 0 blue, -5px 6px 0 blue, -5px 7px 0 blue, -5px 8px 0 blue, -5px 9px 0 blue, -5px 10px 0 blue, -4px -10px 0 blue, -4px -9px 0 blue, -4px -8px 0 blue, -4px -7px 0 blue, -4px -6px 0 blue, -4px -5px 0 blue, -4px -4px 0 blue, -4px -3px 0 blue, -4px -2px 0 blue, -4px -1px 0 blue, -4px 0px 0 blue, -4px 1px 0 blue, -4px 2px 0 blue, -4px 3px 0 blue, -4px 4px 0 blue, -4px 5px 0 blue, -4px 6px 0 blue, -4px 7px 0 blue, -4px 8px 0 blue, -4px 9px 0 blue, -4px 10px 0 blue, -3px -10px 0 blue, -3px -9px 0 blue, -3px -8px 0 blue, -3px -7px 0 blue, -3px -6px 0 blue, -3px -5px 0 blue, -3px -4px 0 blue, -3px -3px 0 blue, -3px -2px 0 blue, -3px -1px 0 blue, -3px 0px 0 blue, -3px 1px 0 blue, -3px 2px 0 blue, -3px 3px 0 blue, -3px 4px 0 blue, -3px 5px 0 blue, -3px 6px 0 blue, -3px 7px 0 blue, -3px 8px 0 blue, -3px 9px 0 blue, -3px 10px 0 blue, -2px -10px 0 blue, -2px -9px 0 blue, -2px -8px 0 blue, -2px -7px 0 blue, -2px -6px 0 blue, -2px -5px 0 blue, -2px -4px 0 blue, -2px -3px 0 blue, -2px -2px 0 blue, -2px -1px 0 blue, -2px 0px 0 blue, -2px 1px 0 blue, -2px 2px 0 blue, -2px 3px 0 blue, -2px 4px 0 blue, -2px 5px 0 blue, -2px 6px 0 blue, -2px 7px 0 blue, -2px 8px 0 blue, -2px 9px 0 blue, -2px 10px 0 blue, -1px -10px 0 blue, -1px -9px 0 blue, -1px -8px 0 blue, -1px -7px 0 blue, -1px -6px 0 blue, -1px -5px 0 blue, -1px -4px 0 blue, -1px -3px 0 blue, -1px -2px 0 blue, -1px -1px 0 blue, -1px 0px 0 blue, -1px 1px 0 blue, -1px 2px 0 blue, -1px 3px 0 blue, -1px 4px 0 blue, -1px 5px 0 blue, -1px 6px 0 blue, -1px 7px 0 blue, -1px 8px 0 blue, -1px 9px 0 blue, -1px 10px 0 blue, 0px -10px 0 blue, 0px -9px 0 blue, 0px -8px 0 blue, 0px -7px 0 blue, 0px -6px 0 blue, 0px -5px 0 blue, 0px -4px 0 blue, 0px -3px 0 blue, 0px -2px 0 blue, 0px -1px 0 blue, 0px 0px 0 blue, 0px 1px 0 blue, 0px 2px 0 blue, 0px 3px 0 blue, 0px 4px 0 blue, 0px 5px 0 blue, 0px 6px 0 blue, 0px 7px 0 blue, 0px 8px 0 blue, 0px 9px 0 blue, 0px 10px 0 blue, 1px -10px 0 blue, 1px -9px 0 blue, 1px -8px 0 blue, 1px -7px 0 blue, 1px -6px 0 blue, 1px -5px 0 blue, 1px -4px 0 blue, 1px -3px 0 blue, 1px -2px 0 blue, 1px -1px 0 blue, 1px 0px 0 blue, 1px 1px 0 blue, 1px 2px 0 blue, 1px 3px 0 blue, 1px 4px 0 blue, 1px 5px 0 blue, 1px 6px 0 blue, 1px 7px 0 blue, 1px 8px 0 blue, 1px 9px 0 blue, 1px 10px 0 blue, 2px -10px 0 blue, 2px -9px 0 blue, 2px -8px 0 blue, 2px -7px 0 blue, 2px -6px 0 blue, 2px -5px 0 blue, 2px -4px 0 blue, 2px -3px 0 blue, 2px -2px 0 blue, 2px -1px 0 blue, 2px 0px 0 blue, 2px 1px 0 blue, 2px 2px 0 blue, 2px 3px 0 blue, 2px 4px 0 blue, 2px 5px 0 blue, 2px 6px 0 blue, 2px 7px 0 blue, 2px 8px 0 blue, 2px 9px 0 blue, 2px 10px 0 blue, 3px -10px 0 blue, 3px -9px 0 blue, 3px -8px 0 blue, 3px -7px 0 blue, 3px -6px 0 blue, 3px -5px 0 blue, 3px -4px 0 blue, 3px -3px 0 blue, 3px -2px 0 blue, 3px -1px 0 blue, 3px 0px 0 blue, 3px 1px 0 blue, 3px 2px 0 blue, 3px 3px 0 blue, 3px 4px 0 blue, 3px 5px 0 blue, 3px 6px 0 blue, 3px 7px 0 blue, 3px 8px 0 blue, 3px 9px 0 blue, 3px 10px 0 blue, 4px -10px 0 blue, 4px -9px 0 blue, 4px -8px 0 blue, 4px -7px 0 blue, 4px -6px 0 blue, 4px -5px 0 blue, 4px -4px 0 blue, 4px -3px 0 blue, 4px -2px 0 blue, 4px -1px 0 blue, 4px 0px 0 blue, 4px 1px 0 blue, 4px 2px 0 blue, 4px 3px 0 blue, 4px 4px 0 blue, 4px 5px 0 blue, 4px 6px 0 blue, 4px 7px 0 blue, 4px 8px 0 blue, 4px 9px 0 blue, 4px 10px 0 blue, 5px -10px 0 blue, 5px -9px 0 blue, 5px -8px 0 blue, 5px -7px 0 blue, 5px -6px 0 blue, 5px -5px 0 blue, 5px -4px 0 blue, 5px -3px 0 blue, 5px -2px 0 blue, 5px -1px 0 blue, 5px 0px 0 blue, 5px 1px 0 blue, 5px 2px 0 blue, 5px 3px 0 blue, 5px 4px 0 blue, 5px 5px 0 blue, 5px 6px 0 blue, 5px 7px 0 blue, 5px 8px 0 blue, 5px 9px 0 blue, 5px 10px 0 blue, 6px -10px 0 blue, 6px -9px 0 blue, 6px -8px 0 blue, 6px -7px 0 blue, 6px -6px 0 blue, 6px -5px 0 blue, 6px -4px 0 blue, 6px -3px 0 blue, 6px -2px 0 blue, 6px -1px 0 blue, 6px 0px 0 blue, 6px 1px 0 blue, 6px 2px 0 blue, 6px 3px 0 blue, 6px 4px 0 blue, 6px 5px 0 blue, 6px 6px 0 blue, 6px 7px 0 blue, 6px 8px 0 blue, 6px 9px 0 blue, 6px 10px 0 blue, 7px -10px 0 blue, 7px -9px 0 blue, 7px -8px 0 blue, 7px -7px 0 blue, 7px -6px 0 blue, 7px -5px 0 blue, 7px -4px 0 blue, 7px -3px 0 blue, 7px -2px 0 blue, 7px -1px 0 blue, 7px 0px 0 blue, 7px 1px 0 blue, 7px 2px 0 blue, 7px 3px 0 blue, 7px 4px 0 blue, 7px 5px 0 blue, 7px 6px 0 blue, 7px 7px 0 blue, 7px 8px 0 blue, 7px 9px 0 blue, 7px 10px 0 blue, 8px -10px 0 blue, 8px -9px 0 blue, 8px -8px 0 blue, 8px -7px 0 blue, 8px -6px 0 blue, 8px -5px 0 blue, 8px -4px 0 blue, 8px -3px 0 blue, 8px -2px 0 blue, 8px -1px 0 blue, 8px 0px 0 blue, 8px 1px 0 blue, 8px 2px 0 blue, 8px 3px 0 blue, 8px 4px 0 blue, 8px 5px 0 blue, 8px 6px 0 blue, 8px 7px 0 blue, 8px 8px 0 blue, 8px 9px 0 blue, 8px 10px 0 blue, 9px -10px 0 blue, 9px -9px 0 blue, 9px -8px 0 blue, 9px -7px 0 blue, 9px -6px 0 blue, 9px -5px 0 blue, 9px -4px 0 blue, 9px -3px 0 blue, 9px -2px 0 blue, 9px -1px 0 blue, 9px 0px 0 blue, 9px 1px 0 blue, 9px 2px 0 blue, 9px 3px 0 blue, 9px 4px 0 blue, 9px 5px 0 blue, 9px 6px 0 blue, 9px 7px 0 blue, 9px 8px 0 blue, 9px 9px 0 blue, 9px 10px 0 blue, 10px -10px 0 blue, 10px -9px 0 blue, 10px -8px 0 blue, 10px -7px 0 blue, 10px -6px 0 blue, 10px -5px 0 blue, 10px -4px 0 blue, 10px -3px 0 blue, 10px -2px 0 blue, 10px -1px 0 blue, 10px 0px 0 blue, 10px 1px 0 blue, 10px 2px 0 blue, 10px 3px 0 blue, 10px 4px 0 blue, 10px 5px 0 blue, 10px 6px 0 blue, 10px 7px 0 blue, 10px 8px 0 blue, 10px 9px 0 blue, 10px 10px 0 blue;
+}
+
+.form-background {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  margin-top: 0px;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.form-control {
+  margin-bottom: 20px;
+}
+
+.form-control:hover {
+  box-shadow: inset 0 0 5px 2px;
+}
+
+#searchForm {
+  margin-top: 30vh;
+  height: 30%;
+  width: 50%;
+  background-color: #d3d3d3;
+  transition: 0.5s linear;
+  color: black;
+  padding: 20px;
+  border-radius: 20px;
+  z-index: 1px;
+}
+
+#searchForm:hover {
+  background-color: black;
+  color: white;
+}
+
+.btn.btn-success {
+  margin: 5px;
+  overflow-wrap: break-word;
+  line-break: normal;
+}
+
+.btn.btn-primary {
+  height: 45px;
+  margin: 0;
+}
+
+.download-container {
+  margin-top: 1%;
+  height: 20vw;
+  display: flex;
+}
+
+/*# sourceMappingURL=ownStyles.css.map */

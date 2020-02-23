@@ -1,0 +1,10 @@
+/* 
+ * Future Goals:
+ *  -  Graphically showing if a user has fulfilled CEAB Accreditation Requirements.
+ *  -  Gather more information about UofT's Upper Year Courses and display them,
+ *     such as feedback from Reddit.
+ *  
+ *  -  Have the ability to check out other people's Upper Year Course Selections.
+ *  -  Make a Forum to Post Your Own Thoughts on Upper Year Course Selections. 
+ *  -  Complete delete operations using id->JSON. 
+ */
