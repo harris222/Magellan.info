@@ -1,4 +1,4 @@
-uthor: Harris Zheng
+## Author: Harris Zheng ## 
 * Date: Feb 23, 2020 
 * Abstract: A JavaScript/Node.js Program that stores information about the user's Upper Year Engineering Courses. 
 * The main intent of this program is to give the user the ability to assess Upper Year course selection choices.
