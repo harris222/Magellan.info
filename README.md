@@ -19,8 +19,8 @@ to fulfill CEAB Requirements: https://engineerscanada.ca/accreditation/about-acc
       power to assess multiple profiles.   
 - [X] User can add courses.
 - [X] User can remove courses.
-- [X] User can calculate the amount of AU units of his courses instantaneously as courses  
-      are being removed -- unlike on the UofT website, where an entire profile has to be submitted for 
+- [X] User can calculate AU credits instantaneously as courses  
+      are being added and removed -- unlike on the UofT website, where an entire profile has to be submitted for 
       AU units to be seen. 
 
 ## Program Features: ##
