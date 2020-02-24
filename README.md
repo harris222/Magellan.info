@@ -1,4 +1,4 @@
-# Magellan.info # 🔍 
+# Magellan.info 🔍 
 *An Informative Web Scraper* 
 
 > Author: Harris Zheng  
