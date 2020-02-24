@@ -30,6 +30,7 @@ to fulfill CEAB Requirements: https://engineerscanada.ca/accreditation/about-acc
 
 ## Organization: ##
 This project is organized into six main layers, from abstract to concrete functionalities.
+
 Layer                                           | 
 ------------------------------------------------|
 Table Calculation Implementation (tableCalculations.js) |
@@ -39,13 +40,9 @@ Form Processor (formFunc.js) |
 JSON Processor (upload.js and download.js) |
 Web Scraping and Backend Work (/routes) |
 
-> Honestly I wish Vanilla JavaScript had a more organized structure like C++. I would definitely familiarize myself
-with sass, node.js, and React in order to counter problems caused by inorganization in the future. 
-
 ## Future Goals: ## 
- -  Graphically showing if a user has fulfilled CEAB Accreditation Requirements.
- -  Gather more information about UofT's Upper Year Courses and display them,
- -  such as feedback from Reddit.
+ -  Graphically showing if user has fulfilled CEAB Accreditation Requirements.
+ -  Gather more information about UofT's Upper Year Courses and display them, such as feedback on coursesfrom Reddit.
  -  Add features to check out other people's Upper Year Course Selections.
- -  Make a Forum to Post Your Own Thoughts on Upper Year Course Selections. 
+ -  Make a Forum to share thoughts on Upper Year Course Selections. 
  -  Complete delete operations using maps id->JSON instead of manipulating the DOM tree.
