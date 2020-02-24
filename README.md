@@ -8,9 +8,9 @@ YouTube Video of Presentation:
 https://www.youtube.com/watch?v=os8LjeZu77I
 
 ## Abstract: ## 
-A JavaScript/Node.js Program that stores information about the user's Upper Year Engineering Courses. 
+A JavaScript/Node.js Program that stores information about a user's Upper Year Engineering Courses. 
 The main intent of this program is to give the user the ability to assess Upper Year course selection choices.
-Right now, the program is able to assess AU Units, which quantifies how many credits that an Engineer needs 
+Right now, the program is able to compute and assess AU Units, which quantifies how many credits that an Engineer needs 
 to fulfill CEAB Requirements: https://engineerscanada.ca/accreditation/about-accreditation  
 
 ## User Features: ##
@@ -42,7 +42,7 @@ Web Scraping and Backend Work (/routes) |
 
 ## Future Goals: ## 
  -  Graphically showing if user has fulfilled CEAB Accreditation Requirements.
- -  Gather more information about UofT's Upper Year Courses and display them, such as feedback on coursesfrom Reddit.
+ -  Gather more information about UofT's Upper Year Courses and display them, such as feedback on courses from Reddit.
  -  Add features to check out other people's Upper Year Course Selections.
  -  Make a Forum to share thoughts on Upper Year Course Selections. 
  -  Complete delete operations using maps id->JSON instead of manipulating the DOM tree.
