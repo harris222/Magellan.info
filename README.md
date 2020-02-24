@@ -1,5 +1,5 @@
 # Magellan.info 🔍 
-*An Informative Web Scraper* 
+*An Informative Web Scraper* ☕
 
 > Author: Harris Zheng  
 > Date: Feb 23, 2020 
