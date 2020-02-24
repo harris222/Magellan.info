@@ -12,7 +12,7 @@ to fulfill CEAB Requirements: https://engineerscanada.ca/accreditation/about-acc
 
 ## User Features: ##
 - [X] User can upload a JSON database of course information from local repository.
-- [X] User can save multiple JSON databases of course information from local repository, allowing 
+- [X] User can save multiple JSON databases of course information onto local repository, allowing 
       power to assess multiple profiles.   
 - [X] User can add courses.
 - [X] User can remove courses.
