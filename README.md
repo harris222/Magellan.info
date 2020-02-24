@@ -25,3 +25,11 @@ to fulfill CEAB Requirements: https://engineerscanada.ca/accreditation/about-acc
 -  *Node.js* backend,  *HTML*, *SASS*, *JavaScript* front end. 
 -   Table template is borrowed from https://colorlib.com/wp/css3-table-templates/ 
 
+
+## Future Goals: ## 
+ -  Graphically showing if a user has fulfilled CEAB Accreditation Requirements.
+ -  Gather more information about UofT's Upper Year Courses and display them,
+ -  such as feedback from Reddit.
+ -  Add features to check out other people's Upper Year Course Selections.
+ -  Make a Forum to Post Your Own Thoughts on Upper Year Course Selections. 
+ -  Complete delete operations using maps id->JSON instead of manipulating the DOM tree.
