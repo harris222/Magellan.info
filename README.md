@@ -29,6 +29,16 @@ to fulfill CEAB Requirements: https://engineerscanada.ca/accreditation/about-acc
 -   Table template is borrowed from https://colorlib.com/wp/css3-table-templates/ 
 
 ## Organization: ##
+This project is organized into six main layers, from abstract to concrete functionalities.
+Layer                                           | 
+------------------------------------------------|
+Table Calculation Implementation (tableCalculations.js) |
+Graphical Interface (GUI.js, index.ejs, and stylesheets compiled from SASS) |
+Third Party Graphics from Colorlib (/vendor and /someoneElsesTable) |
+Form Processor (formFunc.js) |
+JSON Processor (upload.js and download.js) |
+Web Scraping and Backend Work (/routes) |
+
 > Honestly I wish Vanilla JavaScript had a more organized structure like C++. I would definitely familiarize myself
 with sass, node.js, and React in order to counter problems caused by inorganization in the future. 
 
