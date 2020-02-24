@@ -18,7 +18,7 @@ to fulfill CEAB Requirements: https://engineerscanada.ca/accreditation/about-acc
 - [X] User can remove courses.
 - [X] User can calculate the amount of AU units of his courses instantaneously as courses  
       are being removed -- unlike on the UofT website, where an entire profile has to be submitted for 
-- [X] AU units to be seen. 
+      AU units to be seen. 
 
 ## Program Features: ##
 -  *Cheerio* to scrape data on UofT's Upper Year Courses.
