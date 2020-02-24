@@ -33,6 +33,8 @@ function loadJSON(){
                 displayedCourses = JSON.parse(tempReader);
                 console.log(displayedCourses);
                 for (let i = 0; i < 5; i++){
+
+                /* initialAU is always the last element in a JSONArray, because we push and pop in download. */
                 switch(i){
                     case 0: initialAU[i] = +displayedCourses[displayedCourses.length - 1].Math; break;
                     case 1: initialAU[i] = +displayedCourses[displayedCourses.length - 1].NS; break;
@@ -44,6 +46,7 @@ function loadJSON(){
 
                 /* Remove all previous UI  */
                 $('.row100.body').not('#footer, #initial').remove(); // the not modifier
+                
                 /* Update UI */
                 updateUploadUI();
 

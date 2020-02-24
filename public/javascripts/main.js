@@ -17,6 +17,7 @@ let id = 0;
 let input = null;
 let database = [];
 let displayedCourses = []; // Id -> JSON
+let modifying = false;
 let initialAU = [];
 let initialValueProperties = ["Math", "NS", "CS", "ES", "ED"]; // For outwriting to JSON file 
 
@@ -32,6 +33,11 @@ function loadCourseDB(){
   req.open('GET',url,true); // set this to POST if you would like.
   req.addEventListener('load',onLoad);
   req.addEventListener('error',onError);
+  
+  /* Check if the modify button has been clicked. */
+  document.querySelector('#mod').addEventListener("click", function(){
+    modifying = true;
+  });
   // req.setRequestHeader('Content-Type', 'application/json');
   req.send(null);
   promptInitialAU(); // Ask for AU units that the user has already obtained
@@ -58,6 +64,7 @@ function onError() {
  * Description: Ask User for their previous AU units record on pageload. 
  */
 function promptInitialAU(){
+
   let i = 0;
   let temp = [];
   while (i < 5){
@@ -78,21 +85,34 @@ function promptInitialAU(){
       continue;
     } else if (temp[i] == undefined){
       console.log("Cancel Button Pressed.");
-      initialAU[0] = 0;
-      initialAU[1] = 0;
-      initialAU[2] = 0;
-      initialAU[3] = 0;
-      initialAU[4] = 0;
-      break;
+      
+      /* When button is not clicked, screen is loading and 
+      if user cancels initial value load, no initial values are entered. 
+      If modifying button is clicked and cancel is pressed, old values are kept. */
+      if (!modifying){
+        initialAU[0] = 0;
+        initialAU[1] = 0;
+        initialAU[2] = 0;
+        initialAU[3] = 0;
+        initialAU[4] = 0;
+        break;
+      } else {
+        return;
+      }
+      
     }
 
-    /* If all validation tests passed, convert string to number */ 
-    initialAU[i] = +temp[i];
+    i++;
 
-    i++; 
 
   } // while
 
+  /* If all validation tests passed, load old values into new v alues. Convert string to number */ 
+  initialAU[0] = +temp[0];
+  initialAU[1] = +temp[1];
+  initialAU[2] = +temp[2];
+  initialAU[3] = +temp[3];
+  initialAU[4] = +temp[4];
 
   modifyInitialAU();
   // document.querySelector('#initial > .cell100.column8').innerHTML = "+" + initialAU.reduce((accumulator, element) => (accumulator += element), 0);
