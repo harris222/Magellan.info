@@ -95,7 +95,10 @@ function promptInitialAU(){
         initialAU[2] = 0;
         initialAU[3] = 0;
         initialAU[4] = 0;
-        break;
+        modifyInitialAU();
+        sumCourse();
+        console.log(initialAU);
+        return;
       } else {
         return;
       }
