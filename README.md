@@ -25,6 +25,9 @@ to fulfill CEAB Requirements: https://engineerscanada.ca/accreditation/about-acc
 -  *Node.js* backend,  *HTML*, *SASS*, *JavaScript* front end. 
 -   Table template is borrowed from https://colorlib.com/wp/css3-table-templates/ 
 
+## Organization: ##
+> Honestly I wish Vanilla JavaScript had a more organized structure like C++. I would definitely familiarize myself
+with sass, node.js, and React in order to counter problems caused by inorganization in the future. 
 
 ## Future Goals: ## 
  -  Graphically showing if a user has fulfilled CEAB Accreditation Requirements.
