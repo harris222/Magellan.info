@@ -34,13 +34,10 @@ function loadCourseDB(){
   req.addEventListener('load',onLoad);
   req.addEventListener('error',onError);
   
-  /* Check if the modify button has been clicked. */
-  document.querySelector('#mod').addEventListener("click", function(){
-    modifying = true;
-  });
+  initialAU = Array(5).fill(0); // fill array of 5 with value 0 
+  console.log(initialAU);
   // req.setRequestHeader('Content-Type', 'application/json');
   req.send(null);
-  promptInitialAU(); // Ask for AU units that the user has already obtained
 } // loadCourse()
 
 /**
@@ -60,68 +57,57 @@ function onError() {
   alert('error receiving async AJAX call');
 }
 
-/** Name: promptInitialAU
- * Description: Ask User for their previous AU units record on pageload. 
+/** Name: editableInitialAU
+ * Description: Onclick modification of initial AU values.
  */
-function promptInitialAU(){
+function editableInitialAU(event){
+  let row = document.querySelector("#initial"); 
+  let td = event.target.closest('td'); // returns nearest ancestor that matches the selector.
+  if (!td) return;
+  if (!row.contains(td)) return;
+  if (td.classList.value === "cell100 column1") return;
+  else if (td.classList.value === "cell100 column2") return;
+  else if (td.classList.value === "cell100 column8") return;
+  console.log(td.classList);
+  /* Ensured that td inside row is selected, then we insert/delete textarea*/
+  if(td.querySelector("textarea") !== null){  
+  } else {
+    let textarea = document.createElement("textarea"); 
+    let prevVariable = +td.innerHTML; // variable stored before textArea is changed. 
+    textarea.innerHTML = td.innerHTML;
+    td.innerHTML = ""; 
+    textarea.setAttribute("class", "initialCredits"); 
+    textarea.addEventListener("blur", blur);
+    /* When entry box loses focus, blur activates. */
+    function blur(){
+      console.log(initialAU);
+      if (td.querySelector("textarea") !== null){
+        let text = td.querySelector("textarea").value;
+        td.querySelector("textarea").remove();
+        if (isNaN(+text) || text === undefined){
+          td.innerHTML = prevVariable;
+          return; 
+        } 
+        td.innerHTML = text;
 
-  let i = 0;
-  let temp = [];
-  while (i < 5){
-    switch(i){
-      case 0: temp[i] = prompt("Math Units:", initialAU[i]); break;
-      case 1: temp[i] = prompt("CS Units:", initialAU[i]); break;
-      case 2: temp[i] = prompt("ES Units:", initialAU[i]); break;
-      case 3: temp[i] = prompt("NS Units:", initialAU[i]); break;
-      case 4: temp[i] = prompt("ED Units:", initialAU[i]); break;
-    }
-    
-    console.log(temp[i]);
-
-    if (isNaN(+temp[i])){
-      i = 0;
-      alert("You Entered an Invalid Value. Try Again.");
-      temp = [];
-      continue;
-    } else if (temp[i] == undefined){
-      console.log("Cancel Button Pressed.");
-      
-      /* When button is not clicked, screen is loading and 
-      if user cancels initial value load, no initial values are entered. 
-      If modifying button is clicked and cancel is pressed, old values are kept. */
-      if (!modifying){
-        initialAU[0] = 0;
-        initialAU[1] = 0;
-        initialAU[2] = 0;
-        initialAU[3] = 0;
-        initialAU[4] = 0;
+        switch(+td.classList.value[td.classList.value.length-1]){
+          case 3: initialAU[0] = +text; break;
+          case 4: initialAU[1] = +text; break;
+          case 5: initialAU[2] = +text; break;
+          case 6: initialAU[3] = +text; break;
+          case 7: initialAU[4] = +text; break; 
+          default: break;
+        }
         modifyInitialAU();
         sumCourse();
-        console.log(initialAU);
-        return;
-      } else {
-        return;
       }
-      
-    }
+    }; 
 
-    i++;
+    td.appendChild(textarea); 
+    textarea.select(); // ensures that no text area is left hanging when blurred. 
 
+  }
+} // editableInitialAU
 
-  } // while
-
-  /* If all validation tests passed, load old values into new v alues. Convert string to number */ 
-  initialAU[0] = +temp[0];
-  initialAU[1] = +temp[1];
-  initialAU[2] = +temp[2];
-  initialAU[3] = +temp[3];
-  initialAU[4] = +temp[4];
-
-  modifyInitialAU();
-  // document.querySelector('#initial > .cell100.column8').innerHTML = "+" + initialAU.reduce((accumulator, element) => (accumulator += element), 0);
-  
-  sumCourse();
-   
-} // 
 
 

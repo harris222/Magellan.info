@@ -66,8 +66,8 @@ function findCourse(){
    */
   function removeCourse(id){
     let elementToDelete = document.querySelector('table > tbody > tr[id="' + id + '"]');    
-    let courseCode = document.querySelector('table > tbody > tr[id="' + id + '"] > .cell100.column1').innerHTML;
-    console.log("String to be deleted: " + courseCode);
+    let courseCode = elementToDelete.querySelector('.cell100.column1').innerHTML;
+    // console.log("String to be deleted: " + courseCode);
     for (let key in displayedCourses){
         console.log(displayedCourses[key].Code);
         if (displayedCourses[key].Code === courseCode){
@@ -76,7 +76,7 @@ function findCourse(){
     }
 
     elementToDelete.remove();
-    console.log("Displayetd array: " + displayedCourses);
+    // console.log("Displayetd array: " + displayedCourses);
     sumCourse();
   } // removeCourse 
   
@@ -109,4 +109,5 @@ function findCourse(){
   
         if (i == 10) break;
     }
-  }
+}
+

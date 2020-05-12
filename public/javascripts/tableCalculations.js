@@ -16,7 +16,7 @@ function modifyInitialAU(){
     document.querySelector('#initial > .cell100.column5').innerHTML = initialAU[2];
     document.querySelector('#initial > .cell100.column6').innerHTML = initialAU[3];
     document.querySelector('#initial > .cell100.column7').innerHTML = initialAU[4]; 
-  } 
+}
 
  /**
   * Name: sumCourses

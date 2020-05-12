@@ -79,14 +79,14 @@
                                         </td>
                                     </tr>
                                     <% }); %> -->
-                                        <tr class="row100 body" id="initial">
+                                        <tr class="row100 body" id="initial" onclick="editableInitialAU(event)">
                                             <td class="cell100 column1">Initial Credits</td>
                                             <td class="cell100 column2"></td>
-                                            <td class="cell100 column3"></td>
-                                            <td class="cell100 column4"></td>
-                                            <td class="cell100 column5"></td>
-                                            <td class="cell100 column6"></td>
-                                            <td class="cell100 column7"></td>
+                                            <td class="cell100 column3">0</td>
+                                            <td class="cell100 column4">0</td>
+                                            <td class="cell100 column5">0</td>
+                                            <td class="cell100 column6">0</td>
+                                            <td class="cell100 column7">0</td>
                                             <td class="cell100 column8"></td>
                                         </tr>
 
@@ -107,7 +107,6 @@
                 </div>
                 <div class="button-container" style='padding-top: 0px;'>
                     <button type="button" class="btn btn-success" style="width: 50%" onclick="showForm()">Add New Class</button>
-                    <button type="button" class="btn btn-success" style="width: 30%" onclick="promptInitialAU()" id="mod">Mod Initial AU Units</button>
                 </div>
 
                 <div class="btn-group download-container">
